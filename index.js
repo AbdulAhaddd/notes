@@ -8,6 +8,7 @@ require('dotenv').config();
 const Note = require('./models/note')
 app.use(cors())
 const PORT = process.env.PORT || 3001
+app.use(express.static('dist'))
 
 
 
